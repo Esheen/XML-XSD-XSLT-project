@@ -25,22 +25,22 @@
 					</tr>
 					<xsl:for-each select="sa:Weeks">
 						<tr>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@week"/>
 							</td>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@weeklyActivity"/>
 							</td>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@BPForecast"/>
 							</td>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@IndForecast"/>
 							</td>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@OrderQuantity"/>
 							</td>
-							<td>
+							<td align="center">
 								<xsl:value-of select="@PromiseQuantity"/>
 							</td>
 						</tr>
