@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.w3schools.com" 
+	xmlns="http://www.w3schools.com" 
+	elementFormDefault="qualified">
+	<xs:complexType name="WeeksType">
+		<xs:attribute name="week"
+			type="xs:int"
+			use="required"/>
+		<xs:attribute name="weeklyActivity"
+			type="xs:string"
+			use="required"/>
+		<xs:attribute name="BPForecast"
+			type="xs:int"
+			use="required"/>
+		<xs:attribute name="IndForecast"
+			type="xs:int"
+			use="required"/>
+		<xs:attribute name="OrderQuantity"
+			type="xs:int"
+			use="required"/>	
+		<xs:attribute name="PromiseQuantity"
+			type="xs:int"
+			use="required"/>	
+	</xs:complexType>
+	<xs:complexType name="ItemType">
+		<xs:sequence>
+			<xs:element name="Weeks"
+				maxOccurs="unbounded"
+				type="WeeksType"/>
+		</xs:sequence>
+		<xs:attribute name="item"
+			type="xs:string"
+			use="required"/>
+		<xs:attribute name="itemPopularity"
+			type="xs:string"
+			use="required"/>
+		<xs:attribute name="avgOrder"
+			type="xs:int"
+			use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ForecastingType">
+		<xs:sequence>
+			<xs:element name="Item"
+				maxOccurs="unbounded"
+				type="ItemType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Forecasting"
+		type="ForecastingType"/>
+</xs:schema>

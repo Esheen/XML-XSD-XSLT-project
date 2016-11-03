@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="forecast.xslt" ?>
+<Forecasting xmlns="http://www.w3schools.com" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://w3schools.com forecast.xsd">
+	<Item item="fishbone" itemPopularity="best reviewed" avgOrder="5">
+		<Weeks week="1" weeklyActivity="replenish" BPForecast="6" IndForecast="5" OrderQuantity="30" PromiseQuantity="5" />
+		<Weeks week="2" weeklyActivity="sales" BPForecast="8" IndForecast="8" OrderQuantity="30" PromiseQuantity="8" />
+		<Weeks week="3" weeklyActivity="newBrand" BPForecast="8" IndForecast="7" OrderQuantity="15" PromiseQuantity="5" />
+	</Item>
+	<Item item="catChewies" itemPopularity="most popular" avgOrder="4">
+		<Weeks week="1" weeklyActivity="replenish" BPForecast="6" IndForecast="5" OrderQuantity="20" PromiseQuantity="5" />
+		<Weeks week="2" weeklyActivity="sales" BPForecast="8" IndForecast="8" OrderQuantity="30" PromiseQuantity="8" />
+		<Weeks week="3" weeklyActivity="newBrand" BPForecast="8" IndForecast="7" OrderQuantity="20" PromiseQuantity="5" />
+	</Item>
+</Forecasting>
